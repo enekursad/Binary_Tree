@@ -36,7 +36,7 @@ class Node:
             if current.right:                       #self in sağdaki ilk düğümü iken:
                 print(current.right.data, end='-')  #self in sağdaki ilk düğümünün datasını yazdık
                 visited.append(current.right)       #visited adlı dizimize soldaki ilk düğümü geçirdik      
-            visited.pop(0)                          #.pop(0) ile visited adlı dizinin ilk elemanını patlattık(döngünü her seferinde kök düğümü yazmaması için)
+            visited.pop(0)                          #.pop(0) ile visited adlı dizinin ilk elemanını patlattık(döngünün her seferinde kök düğümü yazmaması için)
             if not visited:                         #tüm düğümler ziyaret edildiyse aşağıdaki break ile döngüyü kırdık
                 break
             current = visited[0]                    #listenin ilk elemanı kök düğümden sonraki ilk düğüm oldu
