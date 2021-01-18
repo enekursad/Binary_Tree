@@ -29,7 +29,7 @@ class Node:
                 else:                           # sağ boş değilse sağ alt-ağaca ekle
                     self.right.insert(data)
         else:
-            self.data = data                     # ağacın ilk düşümü
+            self.data = data                    # ağacın ilk düşümü
             
     # Ağacı yazdır
     def PrintTree(self):
